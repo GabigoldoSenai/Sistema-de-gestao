@@ -12,7 +12,9 @@
 
 <body>
     <div>
-        {{>_navbar navbarClass='custom-navbar'}}
+        {{#if showNavbar}}
+            {{>_navbar navbarClass='custom-navbar'}}
+        {{/if}}
     </div>
     <div class="container">
         {{{body}}}
