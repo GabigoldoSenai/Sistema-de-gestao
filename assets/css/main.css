@@ -1,0 +1,14 @@
+
+@import url(reset.css);
+@import url(components/buttons.css);
+@import url(components/nav.css);
+@import url(components/dark-mode.css);
+@import url();
+
+:root{
+    /*Adicionar variáveis de cor*/
+}
+
+body{
+    /*Fontes padrão e etc.*/
+}
