@@ -1,37 +1,66 @@
-.custom-navbar {
-    background-color: rgb(255, 255, 255);
-    display: flex;
+body{
+    display:flex;
+    flex-direction: row;
 }
 
-.custom-navbar nav {
-    width: 100%;
-    padding: 10px 0;
+.custom-navbar{
+    background-color: black;
+    width: 90px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
 }
 
-.custom-navbar nav .content-logo {
+.logo{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.custom-navbar>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-navbar>ul>li{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-link{
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.nav-link>i{
+    width: 60px;
     display: flex;
     justify-content: center;
-    width: 100%;
+}
+.nav-link>p{
+    display: none;
+    color: white;
 }
 
-.custom-navbar nav .content-logo .logo {
-    width: 40px;
-    height: 40px;
+.custom-navbar:hover{
+    width: 260px;
 }
 
-.custom-navbar nav ul {
-    gap: -5px;
-}
-
-.custom-navbar nav ul a li {
-    width: 40px;
-    height: 40px;
-}
-
-.custom-navbar nav ul {
-    list-style: none;
-    padding: 0;
+.custom-navbar:hover .nav-link>p{
+    display: block;
 }
