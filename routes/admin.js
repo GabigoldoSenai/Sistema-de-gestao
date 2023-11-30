@@ -10,7 +10,8 @@
             title: 'Login Page',
             style: 'login.css',
             script: 'login.js',
-            showNavbar: false
+            showNavbar: false,
+            showHeader: false
         })
     })
 
@@ -20,7 +21,9 @@
             title: 'Register Page',
             style: 'register.css',
             script: 'register.js',
-            showNavbar: false
+            showNavbar: false,
+            showHeader: false
+            
         })
     })
 
@@ -30,7 +33,8 @@
             title: 'Home Page',
             style: 'home-dashboard.css',
             script: 'home-dashboard.js',
-            showNavbar: true
+            showNavbar: true,
+            showHeader: true
         })
     })
 
@@ -40,7 +44,8 @@
             title: 'Calendar Page',
             style: 'calendar-dashboard.css',
             script: 'calendar-dashboard.js',
-            showNavbar: true
+            showNavbar: true,
+            showHeader: true
         })
     })
 
@@ -50,7 +55,8 @@
             title: 'Requests Page',
             style: 'requests-dashboard.css',
             script: 'requests-dashboard.js',
-            showNavbar: true
+            showNavbar: true,
+            showHeader: true
         })
     })
 
@@ -60,7 +66,8 @@
             title: 'Finance Page',
             style: 'finance-dashboard.css',
             script: 'finance-dashboard.js',
-            showNavbar: true
+            showNavbar: true,
+            showHeader: true
         })
     })
 
@@ -70,7 +77,8 @@
             title: 'Stock Page',
             style: 'stock-dashboard.css',
             script: 'stock-dashboard.js',
-            showNavbar: true
+            showNavbar: true,
+            showHeader: true
         })
     })
     

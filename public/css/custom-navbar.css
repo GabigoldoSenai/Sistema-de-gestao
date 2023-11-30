@@ -1,25 +1,37 @@
 .custom-navbar {
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav {
+    background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 60%;
-    padding: 0 10px;
-    font-size: 16px;
 }
 
-nav ul {
+.custom-navbar nav {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.custom-navbar nav .content-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.custom-navbar nav .content-logo .logo {
+    width: 40px;
+    height: 40px;
+}
+
+.custom-navbar nav ul {
+    gap: -5px;
+}
+
+.custom-navbar nav ul a li {
+    width: 40px;
+    height: 40px;
+}
+
+.custom-navbar nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
 }

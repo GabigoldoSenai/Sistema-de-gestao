@@ -1,0 +1,28 @@
+.custom-header {
+    background-color: rgb(197, 191, 191);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px
+}
+
+.custom-header .user-profile-img,
+.custom-header .notification,
+.custom-header .settings {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+}
+
+.custom-header .right-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0 15px;
+}
+
+.custom-header .left-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0 15px;
+}
