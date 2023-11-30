@@ -11,14 +11,21 @@
 </head>
 
 <body>
-    <div>
-        {{#if showNavbar}}
+        <nav>
+            {{#if showNavbar}}
             {{>_navbar navbarClass='custom-navbar'}}
-        {{/if}}
-    </div>
-    
-    {{{body}}}
-    
+            {{/if}}
+        </nav>
+        <main>
+            <header>
+                {{#if showHeader}}
+                    {{>_header headerClass='custom-header'}}
+                {{/if}}
+            </header>
+            <div class="container">
+                {{{body}}}
+            </div>
+        </main>
 </body>
 <script src="js/{{script}}"></script>
 <script src="../js/custom-navbar.js"></script>

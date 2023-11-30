@@ -2,13 +2,19 @@ body{
     background-color: plum;
 }
 
-.main-content{
+
+
+.container{
     background-color: var(--White);
     border-radius: 25px;
     padding: 50px 40px;
     width: 310px;
     height: auto;
     gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-content{
