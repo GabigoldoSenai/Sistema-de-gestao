@@ -8,7 +8,7 @@
     router.get('/login', (req, res) => {
         res.render('admin/login', {
             title: 'Login Page',
-            style: 'login.css',
+            style: 'form-page.css',
             script: 'login.js',
             showNavbar: false
         })
@@ -18,7 +18,7 @@
     router.get('/register', (req, res) => {
         res.render('admin/register', {
             title: 'Register Page',
-            style: 'register.css',
+            style: 'form-page.css',
             script: 'register.js',
             showNavbar: false
         })

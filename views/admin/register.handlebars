@@ -1,1 +1,25 @@
-<button onclick="Alert()">Register</button>
+<main class="main-content">
+    <h3>Cadastrar conta</h3>
+    <form class="form-content" action="">
+        <div class="input-box">
+            <input type="text" required name="name">
+            <label for="name">Usuário</label>
+        </div>
+        <div class="input-box">
+            <input type="name" required name="email">
+            <label for="email">E-mail</label>
+        </div>
+        <div class="input-box">
+            <input type="password" required name="password">
+            <label for="password">Senha</label>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+
+        <div class="form-text">
+            <small>Já tem uma conta? <a href="/admin/login">Entrar na conta</a></small>
+            <small>ou</small>
+            <small>Entrar como <a href="/admin">visitante</a></small>
+        </div>
+    </form>
+</main>
