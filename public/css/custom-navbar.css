@@ -1,8 +1,17 @@
 body{
     display:flex;
     flex-direction: row;
+    background-color: black;
 }
 
+main{
+    margin: 15px;
+    margin-left: 0;
+    background-color: lightgray;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 20px;
+}
 .custom-navbar{
     background-color: black;
     width: 90px;
@@ -63,4 +72,14 @@ body{
 
 .custom-navbar:hover .nav-link>p{
     display: block;
+}
+
+@media(max-width: 740px) {
+    .custom-navbar:hover{
+        width: 90px;
+    }
+    
+    .custom-navbar:hover .nav-link>p{
+        display: none;
+    }
 }

@@ -1,28 +1,48 @@
+
+
+header{
+    width:100%;
+}
+
 .custom-header {
-    background-color: rgb(197, 191, 191);
+    width: 100%;
+    background:transparent;
     color: #fff;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 10px
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
 }
 
-.custom-header .user-profile-img,
-.custom-header .notification,
-.custom-header .settings {
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: green;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
-.custom-header .right-content {
+.right-content,
+.left-content {
     display: flex;
     flex-direction: row;
-    gap: 0 15px;
+    gap: 0 30px;
 }
 
-.custom-header .left-content {
+
+.message{
     display: flex;
-    flex-direction: row;
-    gap: 0 15px;
+    align-items: center;
+}
+
+@media(max-width: 590px){
+    .message{
+        display: none;
+    }
 }
