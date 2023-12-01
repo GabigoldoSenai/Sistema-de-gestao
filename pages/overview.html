@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Geral</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components/overview.css">
+    <script src="https://kit.fontawesome.com/4f5c786c9e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="logo">
+        </div>
+
+        <ul>
+
+            <li><a class="nav-link" href="./overview.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Overview</p>
+                </a></li>
+
+            <li><a class="nav-link" href="./calendario.html">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>Calendário</p>
+                </a></li>
+
+            <li><a class="nav-link" href="./eventos.html">
+                    <i class="fa-solid fa-thumbtack"></i>
+                    <p>Eventos</p>
+                </a></li>
+
+            <li><a class="nav-link" href="./financas.html">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <p>Finanças</p>
+                </a></li>
+
+            <li><a class="nav-link" href="./estoque.html">
+                    <i class="fa-solid fa-box"></i>
+                    <p>Estoque</p>
+                </a></li>
+
+        </ul>
+    </nav>
+
+
+    <main class="main-content">
+
+        <header class="custom-header">
+
+            <div class="left-content">
+                <div class="icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="message">
+                    <h4>Olá, Fulana 🖐️</h4>
+                </div>
+
+            </div>
+
+            <div class="right-content">
+                <div class="icon">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+            
+        </header>
+
+        <div class="container">
+            <div class="left-dashboard">
+                <small class="date">
+                    <span class="day-date">Quinta-feira</span>,
+                    07 dez 2023
+                </small>
+
+                <div class="dashboard-header">
+                    <h3>Overview</h3>
+                    <select name="date-select" id="date-select">
+                        <option value="this-month">Esse mês</option>
+                        <option value="this-year">Esse ano</option>
+                    </select>
+                </div>
+
+                <div class="box-container">
+                    <div class="box">
+                        <small>Receita</small>
+                        <h2>R$12K</h2>
+                    </div>
+
+                    <div class="box">
+                        <small>Eventos</small>
+                        <h2>12</h2>
+                    </div>
+
+                    <div class="box">
+                        <small>Pedidos</small>
+                        <h2>12</h2>
+                    </div>
+                </div>
+
+                <div class="bottom-left-dashboard">
+                    <div class="task-list">
+                        <small>Lista de tarefas</small>
+                        <ul>
+                            <li>
+                                <button class="add-task">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <p>Nova tarefa...</p>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="missing-products">
+                        <small>Produtos em falta</small>
+                        <div class="product-container">
+                            <ul>
+                                <li class="product-box">
+                                    <div class="product-icon"></div>
+
+                                    <div class="product-text">
+                                        <h5>Produto 1</h5>
+                                        <small>Qnt: 3 un</small>
+                                    </div>
+                                </li>
+                                <li class="product-box">
+                                    <div class="product-icon"></div>
+
+                                    <div class="product-text">
+                                        <h5>Produto 1</h5>
+                                        <small>Qnt: 3 un</small>
+                                    </div>
+                                </li>
+                                <li class="product-box">
+                                    <div class="product-icon"></div>
+
+                                    <div class="product-text">
+                                        <h5>Produto 1</h5>
+                                        <small>Qnt: 3 un</small>
+                                    </div>
+                                </li>
+                                <li class="product-box">
+                                    <div class="product-icon"></div>
+
+                                    <div class="product-text">
+                                        <h5>Produto 1</h5>
+                                        <small>Qnt: 3 un</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="client-container">
+                <ul>
+                    <li><button class="add-client">+</button></li>
+                    <li>
+                        <div class="client-box">
+                            <div class="client-icon"></div>
+
+                            <div class="client-contact">
+                                <h5>Nome do cliente</h5>
+                                <small>(99)99999-9999</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-box">
+                            <div class="client-icon"></div>
+
+                            <div class="client-contact">
+                                <h5>Nome do cliente</h5>
+                                <small>(99)99999-9999</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-box">
+                            <div class="client-icon"></div>
+
+                            <div class="client-contact">
+                                <h5>Nome do cliente</h5>
+                                <small>(99)99999-9999</small>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
