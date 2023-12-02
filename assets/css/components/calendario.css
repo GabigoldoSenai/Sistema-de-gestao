@@ -1,2 +1,97 @@
 @import url(../nav.css);
 @import url(../header.css);
+
+.container{
+    display: flex;
+    margin-top: 15px;
+    height:320px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.calendar{
+    padding: 15px;
+}
+
+.month,
+.weekdays,
+.days{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.month{
+    gap: 10px;
+    font-size: 15px;
+}
+
+.weekdays{
+    margin-top: 15px;
+    font-size: 11px;
+    gap: 17px;
+}
+
+.days{
+    margin-top: 15px;
+    gap:5px;
+}
+
+.day{
+    border-radius: 100px;
+    width:30px;
+    height: 30px;
+    border: 1px solid grey;
+    font-size: 14px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-date,
+.next-date{
+    background-color: lightgrey;
+}
+
+.left{
+    width: 440px;
+    background-color: aqua;
+    height:auto;
+}
+
+.right{
+    width: 100%;
+    background-color: blueviolet;
+}
+
+@media (max-width:1100px) {
+    .left{
+        width: 480px;
+    }
+}
+
+@media (max-width: 940px){
+    .left{
+        width: 550px;
+    }
+}
+
+@media (max-width:850px){
+    .container{
+        flex-direction: column;
+        min-height: calc(100% - 70px);
+        max-height: auto;
+    }
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        min-height: 100%;
+        max-height: auto;
+        width: 100%;
+    }
+}

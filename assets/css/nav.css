@@ -74,7 +74,7 @@ main{
     display: block;
 }
 
-@media(max-width: 740px) {
+@media(max-width: 800px) {
     .custom-navbar:hover{
         width: 90px;
     }
