@@ -30,8 +30,24 @@
     gap: 0 30px;
 }
 
+.pop-up {
+    display: none;
+    transform: scaleX(-1);
+    position: fixed;
+    margin-left: -90px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
 
-.message{
+.pop-up #close-button-settings,
+.pop-up #close-button-notifications {
+    font-size: 40px;
+}
+
+.message {
     display: flex;
     align-items: center;
 }

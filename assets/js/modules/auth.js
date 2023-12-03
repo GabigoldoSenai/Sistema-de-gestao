@@ -53,9 +53,9 @@ function inputVerification() {
             }
         }
 
-        if ((nameInputValidation && nameInputValidation.value != "") && emailInput != "" && passwordInput != "") {
+        if ((nameInputValidation && nameInputValidation.value !== "") && emailRegex.test(emailInput) && passwordRegex.test(passwordInput)) {
             window.location.href = '../../../pages/login.html'
-        } else if (!nameInputValidation && emailInput != "" && passwordInput != "") {
+        } else if (!nameInputValidation && emailRegex.test(emailInput) && passwordRegex.test(passwordInput)) {
             window.location.href = '../../../pages/overview.html'
         }
 }
