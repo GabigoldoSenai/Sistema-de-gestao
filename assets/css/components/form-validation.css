@@ -61,10 +61,14 @@ input::placeholder{
 input:not(:placeholder-shown),
 label:hover,
 input:hover~label,
-input:focus~label,
-input:valid~label{
+input:focus~label{
     bottom: 55px;
     font-size: 0.8em;
+}
+
+.message {
+    display: none;
+    font-size: 12px;
 }
 
 button{

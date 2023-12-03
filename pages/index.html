@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar conta</title>
+    <title>Entrar na conta</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/components/form-validation.css">
     <script src="https://kit.fontawesome.com/4f5c786c9e.js" crossorigin="anonymous"></script>
@@ -12,32 +12,33 @@
 
 <body>
     <main class="container">
-        <h3>Cadastrar conta</h3>
+        <h3>Registrar sua conta</h3>
         <form class="form-content" action="">
             <div class="input-box">
-                <input type="text" required name="name">
-                <label for="name">Usuário</label>
+                <input type="text" name="name" id="name">
+                <label for="name" id="nameLabel">Nome</label>
+                <span class="message" id="nameError"> Esse nome é inválido </span>
             </div>
             <div class="input-box">
-                <input type="name" required name="email">
-                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="email" id="emailLabel">Email</label>
+                <span class="message" id="emailError"> Esse email é inválido </span>
             </div>
             <div class="input-box">
-                <input type="password" required name="password">
-                <label for="password">Senha</label>
+                <input type="password" name="password" id="password">
+                <label for="password" id="passwordLabel">Senha</label>
+                <span class="message" id="passwordError"> Essa senha é inválida </span>
             </div>
 
-            <button type="submit">Cadastrar</button>
+            <button type="button" id="buttonForm">Cadastre-se</button>
 
             <div class="form-text">
-                <small>Já tem uma conta? <a href="./login.html">Entrar na conta</a></small>
+                <small>Já possui uma conta? <a href="./login.html">Faça login</a></small>
                 <small>ou</small>
                 <small>Entrar como <a href="./overview.html">visitante</a></small>
             </div>
         </form>
     </main>
-
-    <script src="../assets/js/modules/login.js"></script>
 </body>
-
+<script src="../assets/js/modules/auth.js"></script>
 </html>
