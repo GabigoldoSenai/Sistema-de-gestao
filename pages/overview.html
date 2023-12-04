@@ -164,39 +164,14 @@
             </div>
 
             <div class="client-container">
-                <ul>
-                    <li><button class="add-client">+</button></li>
-                    <li>
-                        <div class="client-box">
-                            <div class="client-icon"></div>
-
-                            <div class="client-contact">
-                                <h5>Nome do cliente</h5>
-                                <small>(99)99999-9999</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="client-box">
-                            <div class="client-icon"></div>
-
-                            <div class="client-contact">
-                                <h5>Nome do cliente</h5>
-                                <small>(99)99999-9999</small>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="client-box">
-                            <div class="client-icon"></div>
-
-                            <div class="client-contact">
-                                <h5>Nome do cliente</h5>
-                                <small>(99)99999-9999</small>
-                            </div>
-                        </div>
-                    </li>
-
+                
+                <ul id="client-list">
+                    <div class="pop-up-clients" id="hidden-clients">
+                        <input type="text" id="clientNameInput">
+                        <input type="text" id="clientCellInput">
+                        <li><button id="addClient" class="add-client">+</button></li>
+                    </div>
+                    <li><button id="btnClient" class="add-client">+</button></li>
                 </ul>
 
             </div>
@@ -207,4 +182,5 @@
 
 </body>
 <script src="../assets/js/modules/tasks.js"></script>
+<script src="../assets/js/modules/clients.js"></script>
 </html>

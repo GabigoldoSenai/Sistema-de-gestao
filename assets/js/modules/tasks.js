@@ -1,16 +1,20 @@
-const btnAdd = document.getElementById('addTask')
+const btnAddTask = document.getElementById('addTask')
 
-btnAdd.addEventListener('click', () => {
+let idCounter = 1;
+
+btnAddTask.addEventListener('click', () => {
     const listTasks = document.querySelector('.task-list')
     const inputTask = document.getElementById('nameTask').value
-    const newCard = document.createElement('div')
+    const newTask = document.createElement('div')
 
     if(inputTask == "") {
-        inputTask.style.outlineColor = 'red';
+        newTask.className = 'card-task';
+        newTask.textContent = 'Tarefa ' + idCounter;
+        idCounter++
     } else {
-        newCard.className = 'card-task';
-        newCard.textContent += inputTask;
+        newTask.className = 'card-task';
+        newTask.textContent += inputTask;
     }
 
-    listTasks.appendChild(newCard)
+    listTasks.appendChild(newTask)
 })
