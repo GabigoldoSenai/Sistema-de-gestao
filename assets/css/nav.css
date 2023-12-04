@@ -1,19 +1,18 @@
 body{
     display:flex;
     flex-direction: row;
-    background-color: black;
+    background: linear-gradient( var(--Light-royal-blue) 0%, var(--Light-slate-blue) 100%);
 }
 
 main{
     margin: 15px;
     margin-left: 0;
-    background-color: lightgray;
+    background-color: var(--Light-lavender);
     border-radius: 25px;
     overflow: hidden;
     padding: 20px;
 }
 .custom-navbar{
-    background-color: black;
     width: 90px;
     height: 100%;
     display: flex;
@@ -27,7 +26,7 @@ main{
 .logo{
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: var(--Pale-blue);
     border-radius: 50%;
     margin-top: 30px;
     margin-bottom: 70px;
@@ -49,7 +48,7 @@ main{
 }
 
 .nav-link{
-    color: white;
+    color: var(--Pale-blue);
     display:flex;
     align-items: center;
     justify-content: flex-start;
@@ -63,7 +62,7 @@ main{
 }
 .nav-link>p{
     display: none;
-    color: white;
+    color: var(--Pale-blue);
 }
 
 .custom-navbar:hover{

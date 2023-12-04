@@ -27,11 +27,6 @@
                     <p>Calendário</p>
                 </a></li>
 
-            <li><a class="nav-link" href="./eventos.html">
-                    <i class="fa-solid fa-thumbtack"></i>
-                    <p>Eventos</p>
-                </a></li>
-
             <li><a class="nav-link" href="./financas.html">
                     <i class="fa-solid fa-chart-pie"></i>
                     <p>Finanças</p>
@@ -74,7 +69,7 @@
         <div class="container">
             <div class="left-dashboard">
                 <small class="date">
-                    <span class="day-date">Quinta-feira</span>,
+                    <span class="today-date">Quinta-feira</span>,
                     07 dez 2023
                 </small>
 
@@ -83,6 +78,7 @@
                     <select name="date-select" id="date-select">
                         <option value="this-month">Esse mês</option>
                         <option value="this-year">Esse ano</option>
+                        <option value="this-year">Total</option>
                     </select>
                 </div>
 
@@ -111,7 +107,7 @@
                                 <button id="addTask" class="add-task">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
-                                <input type="text" name="nameTask" id="nameTask">
+                                <input type="text" name="nameTask" id="nameTask" placeholder="Nova tarefa...">
                             </li>
                             <li>
                             </li>
@@ -123,22 +119,6 @@
                         <small>Produtos em falta</small>
                         <div class="product-container">
                             <ul>
-                                <li class="product-box">
-                                    <div class="product-icon"></div>
-
-                                    <div class="product-text">
-                                        <h5>Produto 1</h5>
-                                        <small>Qnt: 3 un</small>
-                                    </div>
-                                </li>
-                                <li class="product-box">
-                                    <div class="product-icon"></div>
-
-                                    <div class="product-text">
-                                        <h5>Produto 1</h5>
-                                        <small>Qnt: 3 un</small>
-                                    </div>
-                                </li>
                                 <li class="product-box">
                                     <div class="product-icon"></div>
 
@@ -169,9 +149,8 @@
                     <div class="pop-up-clients" id="    ">
                         <input type="text" id="clientNameInput">
                         <input type="text" id="clientCellInput">
-                        <li><button id="addClient" class="add-client">+</button></li>
+                        <button id="addClient" class="add-client">+</button>
                     </div>
-                    <li><button id="btnClient" class="add-client">+</button></li>
                 </ul>
 
             </div>

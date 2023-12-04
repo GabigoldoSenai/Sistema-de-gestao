@@ -2,13 +2,13 @@
 .custom-header {
     width: 100%;
     background:transparent;
-    color: #fff;
+    color: var(--Dark-gray-blue);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--Shadow);
     padding-bottom: 15px;
 }
 
@@ -16,11 +16,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
     width: 40px;
     height: 40px;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.icon:hover{
+    background-color: var(--Shadow);
 }
 
 .right-content,

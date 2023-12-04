@@ -3,7 +3,37 @@
 @import url(./dark-mode.css);
 
 :root{
-    /*Adicionar variáveis de cor*/
+        /*### Primary*/
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+/*###Low opacity*/
+--Light-red-opacity: hsl(0, 100%, 67%, .1);
+--Orangey-yellow-opacity: hsl(39, 100%, 56%, .1);
+--Green-teal-opacity: hsl(166, 100%, 37%, .1);
+--Cobalt-blue-opacity: hsl(234, 85%, 45%, .1);
+
+/*## Gradients
+(background)*/
+
+--Light-slate-blue: hsl(252, 100%, 67%);
+--Light-royal-blue: hsl(241, 81%, 54%);
+
+/*(circle)*/
+
+--Violet-blue: hsla(256, 72%, 46%, 1);
+--Persian-blue: hsla(241, 72%, 46%, 0);
+
+/*### Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(182, 100%, 94%);
+--Light-lavender:hsl(241, 100%, 89%);
+--Dark-gray-blue:hsl(224, 30%, 27%);
+
+--Shadow: hsla(243, 13%, 66%, 0.494);
 }
 
 * {
@@ -18,6 +48,7 @@
 }
 
 body{
+    color: var(--Dark-gray-blue);
     height: 100svh;
     width: 100vw;
     display: flex;
