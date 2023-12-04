@@ -177,6 +177,7 @@ todayBtn.addEventListener("click", () => {
     initCalendar();
 });
 
+
 //function get active day day name and date and update eventday eventdate
 function getActiveDay(date) {
     const day = new Date(year, month, date);
