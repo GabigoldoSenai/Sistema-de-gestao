@@ -123,6 +123,10 @@
     background-color: red;
 }
 
+#card-task {
+    background-color: bisque;
+}
+
 @media (max-width: 1070px) {
     body{
         height: auto;
