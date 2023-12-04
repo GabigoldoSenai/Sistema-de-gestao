@@ -36,7 +36,6 @@ const months = [
 ];
 
 const eventsArr = [];
-getEvents();
 console.log(eventsArr);
 
 //function to add days in days with class day and prev-date next-date on previous month and next month days and active on today
@@ -178,7 +177,6 @@ todayBtn.addEventListener("click", () => {
     initCalendar();
 });
 
-
 //function get active day day name and date and update eventday eventdate
 function getActiveDay(date) {
     const day = new Date(year, month, date);
@@ -215,7 +213,6 @@ function updateEvents(date) {
         </div>`;
     }
     eventsContainer.innerHTML = events;
-    saveEvents();
 }
 
 //function to add event
@@ -380,20 +377,6 @@ eventsContainer.addEventListener("click", (e) => {
         }
     }
 });
-
-//function to save events in local storage
-function saveEvents() {
-    localStorage.setItem("events", JSON.stringify(eventsArr));
-}
-
-//function to get events from local storage
-function getEvents() {
-    //check if events are already saved in local storage then return event else nothing
-    if (localStorage.getItem("events") === null) {
-        return;
-    }
-    eventsArr.push(...JSON.parse(localStorage.getItem("events")));
-}
 
 function convertTime(time) {
     //convert time to 24 hour format

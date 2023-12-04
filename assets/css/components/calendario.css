@@ -63,6 +63,7 @@
 }
 
 .right{
+    overflow: scroll;
     width: 100%;
     background-color: blueviolet;
 }
