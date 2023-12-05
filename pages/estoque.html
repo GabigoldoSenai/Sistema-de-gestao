@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../assets/css/components/estoque.css">
     <script src="https://kit.fontawesome.com/4f5c786c9e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav class="custom-navbar">
         <div class="logo">
@@ -36,7 +38,7 @@
                 </a></li>
 
         </ul>
-</nav>
+    </nav>
 
     <main class="main-content">
         <header class="custom-header">
@@ -65,44 +67,39 @@
                     <i id="btn-popup-settings" class="fa-solid fa-gear"></i>
                 </div>
             </div>
-            
+
         </header>
 
         <div class="container">
-            <h3>Gerenciamento de estoque</h3>
-            <button>+</button>
+            <div class="top-nav">
+                <h3>Estoque</h3>
+                <div>
+                    <button id="showPopup">+</button>
+                    <div class="pop-up-production" id="hiddenProduct">
+                        <input type="text" id="nameProduct" placeholder="Nome">
+                        <input type="text" id="amountProduct" placeholder="Quantidade">
+                        <input type="text" id="supplierProduct" placeholder="Fornecedor">
+                        <input type="text" id="cellProduct" placeholder="Telefone">
+                        <textarea cols="10" rows="6" id="descriptionProductTextArea" placeholder="Descrição do produto"></textarea>
+                        <button class="addProduct">+</button>   
+                    </div>
+                </div>
                 <div class="search-box">
-                    <i>o</i>
-                    <input type="text" placeholder="pesquisar...">
+                    <div class="search-icon">
+                        <i id="search-icon" class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    </div>
+                    <input type="text" placeholder="Pesquisar produto...">
                 </div>
-            
-            <div class="stock-products">
-                <div class="product-box">
-                    <div class="product-icon"></div>
-                    <h3>nome foda-se1</h3>
-                    <small><span>Qnt:</span> 15 un.</small>
-                </div>
-                
-                <div class="product-box">
-                    <div class="product-icon"></div>
-                    <h3>nome foda-se2</h3>
-                    <small><span>Qnt:</span> 15 un.</small>
-                </div>
-
-                <div class="product-box">
-                    <div class="product-icon"></div>
-                    <h3>nome foda-se3</h3>
-                    <small><span>Qnt:</span> 15 un.</small>
-                </div>
-                <div class="product-box">
-                    <div class="product-icon"></div>
-                    <h3>nome foda-se4</h3>
-                    <small><span>Qnt:</span> 15 un.</small>
-                </div>
+                <i class="fa-solid fa-filter" style="color: #000000;"></i>
             </div>
-
+            <div class="bottom-container">
+                <div class="list-stock">
+                </div>
+                <div class="stock-focus"></div>
+            </div>
         </div>
     </main>
 </body>
 <script src="../assets/js/modules/popup.js"></script>
+<script src="../assets/js/modules/product.js"></script>
 </html>
