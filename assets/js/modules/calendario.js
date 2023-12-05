@@ -136,7 +136,7 @@ function addListner() {
             //if clicked prev-date or next-date switch to that month
             if (e.target.classList.contains("prev-date")) {
                 prevMonth();
-                //add active to clicked day afte month is change
+                //add active to clicked day after month is change
                 setTimeout(() => {
                     //add active where no prev-date or next-date
                     const days = document.querySelectorAll(".day");
@@ -151,7 +151,7 @@ function addListner() {
                 }, 100);
             } else if (e.target.classList.contains("next-date")) {
                 nextMonth();
-                //add active to clicked day afte month is changed
+                //add active to clicked day after month is changed
                 setTimeout(() => {
                     const days = document.querySelectorAll(".day");
                     days.forEach((day) => {
@@ -231,6 +231,8 @@ document.addEventListener("click", (e) => {
     }
 });
 
+
+
 //allow 50 chars in eventtitle
 addEventTitle.addEventListener("input", (e) => {
     addEventTitle.value = addEventTitle.value.slice(0, 60);
@@ -264,7 +266,7 @@ addEventSubmit.addEventListener("click", () => {
     const eventTimeFrom = addEventFrom.value;
     const eventTimeTo = addEventTo.value;
     if (eventTitle === "" || eventTimeFrom === "" || eventTimeTo === "") {
-        alert("Please fill all the fields");
+        alert("Por favor preencha todas as lacunas");
         return;
     }
 
@@ -279,7 +281,7 @@ addEventSubmit.addEventListener("click", () => {
         timeToArr[0] > 23 ||
         timeToArr[1] > 59
     ) {
-        alert("Invalid Time Format");
+        alert("Formato de tempo inválido");
         return;
     }
 
@@ -302,7 +304,7 @@ addEventSubmit.addEventListener("click", () => {
         }
     });
     if (eventExist) {
-        alert("Event already added");
+        alert("Evento já existe");
         return;
     }
     const newEvent = {

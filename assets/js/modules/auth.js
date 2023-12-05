@@ -63,9 +63,12 @@ function inputVerification() {
 // Mostrar ou não mostrar
 function turnDisplayOn(element) {
     element.style.display = 'inherit';
+    element.style.position = 'relative';
+    element.style.top = '-23px';
+    element.style.color = 'red';
 }
 
 function turnDisplayOff(element, element2) {
     element.style.display = 'none';
-    element2.style.bottom = '55px';
+    element2.style.bottom = '60px';
 }

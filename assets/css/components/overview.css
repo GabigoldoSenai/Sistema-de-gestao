@@ -100,7 +100,6 @@
 .client-container{
     overflow-y:scroll;
     border-radius: 20px;
-    height:fit-content;
     max-height: 76vh;
     width:32%;
     background-color: white;

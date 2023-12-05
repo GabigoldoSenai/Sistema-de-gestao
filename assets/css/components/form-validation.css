@@ -53,22 +53,30 @@ input::placeholder{
 .input-box label{
     position: relative;
     left: 0;
+    bottom: 55px;
+    font-size: 0.8em;
+    transition: ease-in-out 0.3s;
+}
+
+/* .input-box label{
+    position: relative;
+    left: 0;
     bottom: 30px;
     font-size: 1em;
     transition: ease-in-out 0.3s;
 }
 
-input:not(:placeholder-shown),
+input::-webkit-input-placeholder,
 label:hover,
 input:hover~label,
 input:focus~label{
     bottom: 55px;
     font-size: 0.8em;
-}
+} */
 
 .message {
     display: none;
-    font-size: 12px;
+    font-size: 0.7em;
 }
 
 button{
