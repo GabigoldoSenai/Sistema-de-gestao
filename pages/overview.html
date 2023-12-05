@@ -56,11 +56,17 @@
             </div>
 
             <div class="right-content">
-                <div class="icon">
-                    <i class="fa-regular fa-bell"></i>
+                <div class="pop-up" id="popup-notifications">
+                    <i id="close-button-notifications" class="fa-regular fa-circle-xmark" style="color: #000000;"></i>
                 </div>
                 <div class="icon">
-                    <i class="fa-solid fa-gear"></i>
+                    <i id="btn-popup-notifications" class="fa-regular fa-bell"></i>
+                </div>
+                <div class="pop-up" id="popup-settings">
+                    <i id="close-button-settings" class="fa-regular fa-circle-xmark" style="color: #000000;"></i>
+                </div>
+                <div class="icon">
+                    <i id="btn-popup-settings" class="fa-solid fa-gear"></i>
                 </div>
             </div>
 
@@ -160,6 +166,7 @@
     </main>
 
 </body>
+<script src="../assets/js/modules/popup.js"></script>
 <script src="../assets/js/modules/tasks.js"></script>
 <script src="../assets/js/modules/clients.js"></script>
 </html>

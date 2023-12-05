@@ -1,11 +1,11 @@
 body{
-    background-color: plum; 
+    background: linear-gradient( var(--Sea-green) 0%, var(--Lemon-green) 100%);
     align-items: center;
     justify-content: center;
 }
 
 .container{
-    background-color: white;
+    background-color: var(--White);
     border-radius: 25px;
     padding: 50px 40px;
     width: 310px;
@@ -47,7 +47,7 @@ input{
 }
 
 input::placeholder{
-    color: white;
+    color: var(--White);
 }
 
 .input-box label{
@@ -83,15 +83,15 @@ button{
     cursor: pointer;
     text-transform: uppercase;
     border: none;
-    background-color: white;
+    background: var(--White);
     border-radius:5px;
     padding: 15px 0px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 var(--Sea-green);
     margin: 25px 0;
 }
 
 button:active{
-    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 20px 0px var(--Sea-green), 0 4px 4px 0 var(--Sea-green);
 }
 
 @media (max-width: 500px){

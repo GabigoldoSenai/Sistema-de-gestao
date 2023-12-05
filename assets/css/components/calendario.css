@@ -40,12 +40,12 @@
 }
 
 .day{
-    border-radius: 100px;
+    border-radius: 10px;
     width:30px;
     height: 30px;
     border: 1px solid grey;
     font-size: 14px;
-    background-color: white;
+    background-color: var(--White);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +60,7 @@
 
 .prev-date,
 .next-date{
-    background-color: lightgrey;
+    background-color: var(--Light-lavender);
 }
 
 .left{
@@ -68,7 +68,7 @@
     align-items: center;
     justify-content: center;
     width: auto;
-    background-color: var(--Pale-blue);
+    background-color: var(--White);
     height:auto;
 }
 
@@ -88,8 +88,12 @@
 }
 
 .today-btn>button{
-    margin-right: 10px;
-    width: 50px;
+    margin: 0 10px;
+    width: 10px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .today-date,
@@ -102,10 +106,13 @@
     display:flex;
     gap: 10px;
     align-items: center;
+    cursor: pointer;
 }
+
 
 .add-event-body{
     display:flex;
+    margin-left: 30px;
 }
 
 .add-event-input{
@@ -115,10 +122,11 @@
 
 .add-event-input>input{
     border-radius: 25px;
-    font-size: 0.8em;
-    background-color: var(--Pale-blue);
-    padding: 2px 5px;
+    font-size: 0.6em;
+    background-color: var(--Light-lavender);
+    padding: 2px 15px;
     outline: none;
+    border: none;
     width: 70%;
 }
 
@@ -127,6 +135,7 @@
     gap: 10px;
     align-items: center;
 }
+
 
 .event-time{
     font-size: 0.9em;

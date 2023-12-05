@@ -177,8 +177,6 @@ todayBtn.addEventListener("click", () => {
     initCalendar();
 });
 
-
-//function get active day day name and date and update eventday eventdate
 function getActiveDay(date) {
     const day = new Date(year, month, date);
     const dayName = day.toString().split(" ")[0];
@@ -186,7 +184,6 @@ function getActiveDay(date) {
     eventDate.innerHTML = date + " " + months[month] + " " + year;
 }
 
-//function update events when a day is active
 function updateEvents(date) {
     let events = "";
     eventsArr.forEach((event) => {
@@ -198,11 +195,11 @@ function updateEvents(date) {
             event.events.forEach((event) => {
                 events += `<div class="event">
             <div class="title">
-              <i class="fas fa-circle"></i>
-              <h3 class="event-title">${event.title}</h3>
+                <i class="fa-regular fa-circle-xmark event"></i>
+                <h3 class="event-title event">${event.title}</h3>
             </div>
             <div class="event-time">
-              <span class="event-time">${event.time}</span>
+                <span class="event-time event">${event.time}</span>
             </div>
         </div>`;
             });
@@ -232,14 +229,10 @@ document.addEventListener("click", (e) => {
 });
 
 
-
-//allow 50 chars in eventtitle
 addEventTitle.addEventListener("input", (e) => {
-    addEventTitle.value = addEventTitle.value.slice(0, 60);
+    addEventTitle.value = addEventTitle.value.slice(0, 25);
 });
 
-
-//allow only time in eventtime from and to
 addEventFrom.addEventListener("input", (e) => {
     addEventFrom.value = addEventFrom.value.replace(/[^0-9:]/g, "");
     if (addEventFrom.value.length === 2) {
@@ -348,6 +341,8 @@ addEventSubmit.addEventListener("click", () => {
         activeDayEl.classList.add("event");
     }
 });
+
+btnCloseEvent = document.getElementById('closeEvent')
 
 //function to delete event when clicked on event
 eventsContainer.addEventListener("click", (e) => {
