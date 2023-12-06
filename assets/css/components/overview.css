@@ -37,14 +37,16 @@
     height: 80px;
     gap:15px;
     padding: 20px;
-    background-color: white;
+    background-color: #2E3341;
     border-radius: 20px;
+    color: var(--Bright-orange);
 }
 
 .bottom-left-dashboard{
     display: flex;
     width:100%;
     gap: 30px;
+    color: var(--White);
 }
 
 .task-list,
@@ -56,7 +58,7 @@
     height: 42vh;
     border-radius: 20px;
     width: 50%;
-    background-color: white;
+    background-color: #2E3341;
     overflow-y:scroll;
     padding: 15px;
 }
@@ -64,12 +66,13 @@
 .task-list>ul>li{
     display: flex;
     gap: 10px;
+    
 }
 
 .add-task{
     padding: 3px 7px;
     border: none;
-    color: var(--Dark-gray-blue);
+    color: var(--White);
     cursor: pointer;
     background: none;
 }

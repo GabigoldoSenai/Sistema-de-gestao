@@ -26,12 +26,15 @@
 .month{
     gap: 10px;
     font-size: 15px;
+    color: var(--Bright-orange);
+    
 }
 
 .weekdays{
     margin-top: 15px;
     font-size: 11px;
     gap: 17px;
+    color: var(--Bright-orange);
 }
 
 .days{
@@ -55,7 +58,7 @@
 .month>i:hover,
 .day:hover{
     cursor: pointer;
-    background-color: var(--Shadow);
+    background-color: var(--Bright-orange);
 }
 
 .prev-date,
@@ -68,7 +71,7 @@
     align-items:flex-start;
     justify-content: center;
     width: auto;
-    background-color: var(--White);
+    background-color: var(--Dark-gray-blue);
     height:auto;
 }
 
@@ -80,8 +83,7 @@
     overflow-y: scroll;
     height: 100%;
     width: 100%;
-    background-color:  var(--Sea-green);
-    color: var(--Light-gray);
+    background-color: var(--Dark-gray-blue);
 }
 
 .add-event-header>i{
@@ -97,10 +99,15 @@
     cursor: pointer;
 }
 
-.today-date,
+.today-date{
+    margin: 10px 40px;
+    color: var(--Bright-orange);
+}
+
 .events,
 .add-event-wrapper{
     margin: 10px 40px;
+    color: var(--White);
 }
 
 .event{
@@ -113,7 +120,7 @@
 .event:hover{
     background-color: var(--Shadow);
     text-decoration: line-through;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 
@@ -125,12 +132,13 @@
 .add-event-input{
     display: flex;
     justify-content: center;
+    
 }
 
 .add-event-input>input{
     border-radius: 25px;
     font-size: 0.6em;
-    background-color: var(--Light-gray);
+    background-color: var(--White);
     padding: 2px 15px;
     outline: none;
     border: none;
@@ -141,12 +149,13 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    color: var(--White);
 }
 
 
 .event-time{
     font-size: 0.9em;
-    color:white;
+    color: var(--White);
 }
 
 

@@ -2,13 +2,13 @@
 .custom-header {
     width: 100%;
     background:transparent;
-    color: var(--Dark-gray-green);
+    color: var(--Dark-blue);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid var(--Shadow);
+    border-bottom: 1px solid var(--Dark-gray-blue);
     padding-bottom: 15px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .icon:hover{
-    color: var(--White);
+    color: var(--Bright-orange);
 }
 
 .right-content,
@@ -40,7 +40,7 @@
     border-radius: 8px;
     height: 200px;
     width: 200px;
-    background-color: var(--White);
+    background-color: var(--lempn);
 }
 
 

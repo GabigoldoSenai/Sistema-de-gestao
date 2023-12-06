@@ -3,11 +3,11 @@
 @import url(./dark-mode.css);
 
 :root{
-    --Lemon-green: #9dcf4c;
-    --Sea-green: #30af8d;
+    --Dark-blue: #1d2434;
     --White: #fff;
-    --Light-gray: rgb(221, 229, 230);
-    --Dark-gray-green: hsl(190.38deg 62.95% 27.15%);
+    --Light-gray: #bfbfbf;
+    --Dark-gray-blue: #292d38;
+    --Bright-orange: #f8b348;
     --Shadow: hsla(243, 13%, 66%, 0.494);
 }
 
@@ -23,7 +23,7 @@
 }
 
 body{
-    color: var(--Dark-gray-green);
+    color: var(--Dark-gray-blue);
     height: 100svh;
     width: 100vw;
     display: flex;
