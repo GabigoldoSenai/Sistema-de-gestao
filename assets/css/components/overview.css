@@ -7,7 +7,7 @@
     margin-top: 15px;
 }
 .left-dashboard{
-    width:68%;
+    width:100%;
 }
 
 .dashboard-header, .box-container{
@@ -85,6 +85,8 @@
 #nameTask{
     outline: none;
     border: none;
+    background: none;
+    color: var(--White)
 }
 
 .product-box{

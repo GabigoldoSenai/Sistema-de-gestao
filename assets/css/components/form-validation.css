@@ -1,12 +1,24 @@
 body{
-    background: linear-gradient( var(--Sea-green) 0%, var(--Lemon-green) 100%);
+    background-color: var(--Dark-blue);
     align-items: center;
     justify-content: center;
 }
 
+.logo{
+    width: 390px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--White);
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:20px;
+}
+
 .container{
     background-color: var(--White);
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 50px 40px;
     width: 310px;
     height: 400px;
@@ -31,6 +43,8 @@ body{
 a{
     font-weight: bold;
     font-size: 0.8rem;
+    color: var(--Bright-orange);
+    text-decoration: none;
 }
 
 .forgot-password{
@@ -39,15 +53,11 @@ a{
 
 input{
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--Shadow);
     width: 85%;
     outline: none;
     padding: 5px 20px;
     background: transparent;
-}
-
-input::placeholder{
-    color: var(--White);
 }
 
 .input-box label{
@@ -86,12 +96,15 @@ button{
     background: var(--White);
     border-radius:5px;
     padding: 15px 0px;
-    box-shadow: 0 4px 4px 0 var(--Sea-green);
+    box-shadow: 0 4px 4px 0 var(--Shadow);
     margin: 25px 0;
+    font-weight: bold;
+    background-color: var(--Bright-orange);
+    color: var(--Dark-blue);
 }
 
 button:active{
-    box-shadow: 0 4px 20px 0px var(--Sea-green), 0 4px 4px 0 var(--Sea-green);
+    box-shadow: 0 4px 20px 0px var(--Shadow), 0 4px 4px 0 var(--Shadow);
 }
 
 @media (max-width: 500px){

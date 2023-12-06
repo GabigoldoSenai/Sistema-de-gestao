@@ -1,12 +1,19 @@
 @import url(../nav.css);
 @import url(../header.css);
 
+.main-content{
+    margin: 15px;
+    width: 100%;
+    padding: 30px;
+}
+
 .container{
     display: flex;
     margin-top: 15px;
     height:320px;
     border-radius: 25px;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .calendar{

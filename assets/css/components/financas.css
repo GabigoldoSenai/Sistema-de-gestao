@@ -1,2 +1,160 @@
 @import url(../nav.css);
 @import url(../header.css);
+
+.main-content{
+    margin: 15px;
+    width: 100%;
+    padding: 30px;
+}
+
+.container{
+    display: flex;
+    margin-top: 15px;
+    height:90%;
+    border-radius: 25px;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content{
+    display: flex;
+    gap: 30px;
+    height: 95%;
+}
+
+.right,
+.left{
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.right{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left{
+    width: 70%;
+}
+
+.box-header{
+    justify-self: center;
+    width: 95%;
+    border-bottom: 1px solid var(--Bright-orange);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    color: var(--Bright-orange);
+}
+
+.box{
+    height: 100px;
+    width:92%;
+    background-color: var(--Bright-orange);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box-value{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectors{
+    display:flex;
+    gap: 10px;
+}
+
+.box-container{
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.transactions-history,
+.goal-box,
+.statistics-box{
+    width: 89%;
+    height:92%;
+    padding: 20px;
+    background-color: var(--Dark-blue);
+    border-radius: 25px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goal-box{
+    height: 180px;
+}
+
+.graphic-content{
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+
+.graphic-bar{
+    height: 100px;
+    width: 11px;
+    background-color: var(--White);
+    display: block;
+}
+
+.month{
+    align-self: self-end;
+}
+
+.month:nth-child(1) > .graphic-bar{
+    height: 150px;
+}
+
+.month:nth-child(2) > .graphic-bar{
+    height: 70px;
+}
+
+.month:nth-child(3) > .graphic-bar{
+    height: 50px;
+}
+
+.month:nth-child(4) > .graphic-bar{
+    height: 70px;
+}
+
+.month:nth-child(5) > .graphic-bar{
+    height: 180px;
+}
+
+.month:nth-child(6) > .graphic-bar{
+    height: 170px;
+}
+
+.month:nth-child(7) > .graphic-bar{
+    height: 40px;
+}
+.month:nth-child(8) > .graphic-bar{
+    height: 140px;
+}
+.month:nth-child(9) > .graphic-bar{
+    height: 80px;
+}
+.month:nth-child(10) > .graphic-bar{
+    height: 20px;
+}
+.month:nth-child(11) > .graphic-bar{
+    height: 100px;
+}
+.month:nth-child(12) > .graphic-bar{
+    height: 140px;
+}

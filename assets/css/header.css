@@ -40,7 +40,8 @@
     border-radius: 8px;
     height: 200px;
     width: 200px;
-    background-color: var(--lempn);
+    right: 20px;
+    background-color: var(--White);
 }
 
 
@@ -54,7 +55,7 @@
 }
 
 #popup-notifications{
-    right: 110px;
+    right: 95px;
 }
 
 .message {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="../assets/css/components/financas.css">
     <script src="https://kit.fontawesome.com/4f5c786c9e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav class="custom-navbar">
         <div class="logo">
+            <i class="fa-solid fa-cube"></i>
         </div>
 
         <ul>
@@ -36,7 +39,7 @@
                 </a></li>
 
         </ul>
-</nav>
+    </nav>
 
 
     <main class="main-content">
@@ -66,30 +69,171 @@
                     <i id="btn-popup-settings" class="fa-solid fa-gear"></i>
                 </div>
             </div>
-            
+
         </header>
 
         <div class="container">
             <h3>Gestão de finanças</h3>
 
-            <div class="box-container">
-                <div class="meta-box">
-                    <small>Meta de receita:</small>
-                    <h2>R$12K</h2>
+            <div class="content">
+                <div class="left">
+                    <div class="transactions-history">
+                        <div class="box-header">
+                            <small>Histórico de transações</small>
+
+                            <div class="selectors">
+                                <select name="year-select" id="">
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                </select>
+                                <select name="month-select" id="">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box-container">
+                            <div class="box">
+
+                                <small class="today-date">20:00, 12 Jan 2023</small>
+                                <div class="box-value">
+                                    <h3>Nome do cliente</h3>
+                                    <h3>R$399,00</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="box">
+
+                                <small class="today-date">20:00, 12 Jan 2023</small>
+                                <div class="box-value">
+                                    <h3>Nome do cliente</h3>
+                                    <h3>R$399,00</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="box">
+
+                                <small class="today-date">20:00, 12 Jan 2023</small>
+                                <div class="box-value">
+                                    <h3>Nome do cliente</h3>
+                                    <h3>R$399,00</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="box">
+
+                                <small class="today-date">20:00, 12 Jan 2023</small>
+                                <div class="box-value">
+                                    <h3>Nome do cliente</h3>
+                                    <h3>R$399,00</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="carteira-box">
-                    <small>Carteira da empresa</small>
-                    <h2>R$5K</h2>
+
+                <div class="right">
+                    <div class="goal-box">
+                        <div class="box-header">
+                            <small>Meta do mês:</small>
+                        </div>
+                        <div class="box-value">
+                            <h2 id="goal-value">R$12K</h2>
+                            <small>Faltam: R$5K</small>
+                        </div>
+
+                    </div>
+                    <div class="statistics-box">
+                        <div class="box-header">
+                            <small>Estatísticas</small>
+
+                            <select name="year-select" id="">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
+
+                        </div>
+
+                        <div class="graphic-content">
+                            <div class="month">
+                                <span class="graphic-bar january"></span>
+                                <span>J</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar february"></span>
+                                <span>F</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar march"></span>
+                                <span>M</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar april"></span>
+                                <span>A</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar may"></span>
+                                <span>M</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar june"></span>
+                                <span>J</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar july"></span>
+                                <span>J</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar august"></span>
+                                <span>A</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar september"></span>
+                                <span>S</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar october"></span>
+                                <span>O</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar november"></span>
+                                <span>N</span>
+                            </div>
+                            <div class="month">
+                                <span class="graphic-bar december"></span>
+                                <span>D</span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            
-            <div class="graphic">
-                
-            </div>
+
+
+
 
         </div>
     </main>
 
     <script src="../assets/js/modules/popup.js"></script>
 </body>
+
 </html>

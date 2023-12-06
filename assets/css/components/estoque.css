@@ -1,6 +1,12 @@
 @import url(../nav.css);
 @import url(../header.css);
 
+.main-content{
+    margin: 15px;
+    width: 100%;
+    padding: 30px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -123,7 +129,8 @@
 
 .item {
     width: 90%;
-    background-color: var(--White);
+    background-color: var(--Dark-blue);
+    color: var(--Bright-orange);
     height: 250px;
     padding: 10px;
     border-radius: 8px;
