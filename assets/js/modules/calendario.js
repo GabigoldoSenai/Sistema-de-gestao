@@ -7,7 +7,6 @@ const calendar = document.querySelector(".calendar"),
     eventDay = document.querySelector(".event-day"),
     eventDate = document.querySelector(".event-date"),
     eventsContainer = document.querySelector(".events"),
-    addEventBtn = document.querySelector(".add-event"),
     addEventWrapper = document.querySelector(".add-event-wrapper "),
     addEventCloseBtn = document.querySelector(".close "),
     addEventTitle = document.querySelector(".event-name "),
@@ -38,7 +37,7 @@ const months = [
 const eventsArr = [];
 console.log(eventsArr);
 
-//function to add days in days with class day and prev-date next-date on previous month and next month days and active on today
+
 function initCalendar() {
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);
@@ -57,7 +56,7 @@ function initCalendar() {
     }
 
     for (let i = 1; i <= lastDate; i++) {
-        //check if event is present on that day
+        
         let event = false;
         eventsArr.forEach((eventObj) => {
             if (
@@ -97,7 +96,7 @@ function initCalendar() {
     addListner();
 }
 
-//function to add month and year on prev and next button
+
 function prevMonth() {
     month--;
     if (month < 0) {
@@ -121,7 +120,7 @@ next.addEventListener("click", nextMonth);
 
 initCalendar();
 
-//function to add active on day
+
 function addListner() {
     const days = document.querySelectorAll(".day");
     days.forEach((day) => {
@@ -129,16 +128,16 @@ function addListner() {
             getActiveDay(e.target.innerHTML);
             updateEvents(Number(e.target.innerHTML));
             activeDay = Number(e.target.innerHTML);
-            //remove active
+            
             days.forEach((day) => {
                 day.classList.remove("active");
             });
-            //if clicked prev-date or next-date switch to that month
+            
             if (e.target.classList.contains("prev-date")) {
                 prevMonth();
-                //add active to clicked day after month is change
+                
                 setTimeout(() => {
-                    //add active where no prev-date or next-date
+                    
                     const days = document.querySelectorAll(".day");
                     days.forEach((day) => {
                         if (
@@ -151,7 +150,7 @@ function addListner() {
                 }, 100);
             } else if (e.target.classList.contains("next-date")) {
                 nextMonth();
-                //add active to clicked day after month is changed
+                
                 setTimeout(() => {
                     const days = document.querySelectorAll(".day");
                     days.forEach((day) => {
@@ -195,11 +194,11 @@ function updateEvents(date) {
             event.events.forEach((event) => {
                 events += `<div class="event">
             <div class="title">
-                <i class="fa-regular fa-circle-xmark event"></i>
-                <h3 class="event-title event">${event.title}</h3>
+                <i class="fa-regular fa-circle"></i>
+                <h3 class="event-title">${event.title}</h3>
             </div>
             <div class="event-time">
-                <span class="event-time event">${event.time}</span>
+                <span class="event-time">${event.time}</span>
             </div>
         </div>`;
             });
@@ -212,21 +211,6 @@ function updateEvents(date) {
     }
     eventsContainer.innerHTML = events;
 }
-
-//function to add event
-addEventBtn.addEventListener("click", () => {
-    addEventWrapper.classList.toggle("active");
-});
-
-addEventCloseBtn.addEventListener("click", () => {
-    addEventWrapper.classList.remove("active");
-});
-
-document.addEventListener("click", (e) => {
-    if (e.target !== addEventBtn && !addEventWrapper.contains(e.target)) {
-        addEventWrapper.classList.remove("active");
-    }
-});
 
 
 addEventTitle.addEventListener("input", (e) => {
@@ -253,7 +237,7 @@ addEventTo.addEventListener("input", (e) => {
     }
 });
 
-//function to add event to eventsArr
+
 addEventSubmit.addEventListener("click", () => {
     const eventTitle = addEventTitle.value;
     const eventTimeFrom = addEventFrom.value;
@@ -263,7 +247,7 @@ addEventSubmit.addEventListener("click", () => {
         return;
     }
 
-    //check correct time format 24 hour
+    
     const timeFromArr = eventTimeFrom.split(":");
     const timeToArr = eventTimeTo.split(":");
     if (
@@ -281,7 +265,7 @@ addEventSubmit.addEventListener("click", () => {
     const timeFrom = convertTime(eventTimeFrom);
     const timeTo = convertTime(eventTimeTo);
 
-    //check if event is already added
+    
     let eventExist = false;
     eventsArr.forEach((event) => {
         if (
@@ -335,7 +319,7 @@ addEventSubmit.addEventListener("click", () => {
     addEventFrom.value = "";
     addEventTo.value = "";
     updateEvents(activeDay);
-    //select active day and add event class if not added
+    
     const activeDayEl = document.querySelector(".day.active");
     if (!activeDayEl.classList.contains("event")) {
         activeDayEl.classList.add("event");
@@ -344,7 +328,7 @@ addEventSubmit.addEventListener("click", () => {
 
 btnCloseEvent = document.getElementById('closeEvent')
 
-//function to delete event when clicked on event
+
 eventsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("event")) {
         if (confirm("Tem certeza de que quer encerrar o evento?")) {
@@ -360,10 +344,10 @@ eventsContainer.addEventListener("click", (e) => {
                             event.events.splice(index, 1);
                         }
                     });
-                    //if no events left in a day then remove that day from eventsArr
+                    
                     if (event.events.length === 0) {
                         eventsArr.splice(eventsArr.indexOf(event), 1);
-                        //remove event class from day
+                        
                         const activeDayEl = document.querySelector(".day.active");
                         if (activeDayEl.classList.contains("event")) {
                             activeDayEl.classList.remove("event");
@@ -377,7 +361,6 @@ eventsContainer.addEventListener("click", (e) => {
 });
 
 function convertTime(time) {
-    //convert time to 24 hour format
     let timeArr = time.split(":");
     let timeHour = timeArr[0];
     let timeMin = timeArr[1];

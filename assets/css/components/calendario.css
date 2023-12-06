@@ -60,12 +60,12 @@
 
 .prev-date,
 .next-date{
-    background-color: var(--Light-lavender);
+    background-color: var(--Light-gray);
 }
 
 .left{
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
     width: auto;
     background-color: var(--White);
@@ -78,9 +78,10 @@
 
 .right{
     overflow-y: scroll;
+    height: 100%;
     width: 100%;
-    background-color: var(--Light-slate-blue);
-    color: var(--Pale-blue);
+    background-color:  var(--Sea-green);
+    color: var(--Light-gray);
 }
 
 .add-event-header>i{
@@ -109,6 +110,12 @@
     cursor: pointer;
 }
 
+.event:hover{
+    background-color: var(--Shadow);
+    text-decoration: line-through;
+    color:white;
+}
+
 
 .add-event-body{
     display:flex;
@@ -123,7 +130,7 @@
 .add-event-input>input{
     border-radius: 25px;
     font-size: 0.6em;
-    background-color: var(--Light-lavender);
+    background-color: var(--Light-gray);
     padding: 2px 15px;
     outline: none;
     border: none;
@@ -154,8 +161,7 @@
     }
 
     .right{
-        min-height: 100%;
-        max-height: auto;
+        height: 100%;
         width: 100%;
     }
 }

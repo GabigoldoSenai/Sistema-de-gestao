@@ -44,13 +44,13 @@ btnAddProduct.addEventListener('click', () => {
     const regexAmount = /^[0-9]+$/
 
     if(!regexAmount.test(inputAmount) || inputAmount == ""){
-        amountProduct.textContent = 'Quantidade: 99'
+        amountProduct.textContent = 'Quantidade: Indefinido'
     } else {
         amountProduct.textContent = 'Quantidade: ' + inputAmount
     }
     
     if(!regexName.test(inputSupplier) || inputSupplier == ""){
-        supplierProduct.textContent = 'Fornecedor: Ambrósio'
+        supplierProduct.textContent = 'Fornecedor: Indefinido'
     } else {
         supplierProduct.textContent = 'Fornecedor: ' + inputSupplier
     }
@@ -58,13 +58,13 @@ btnAddProduct.addEventListener('click', () => {
     const regexCell = /\(\d{2}\)\s?\d{4,5}-?\d{4}/g;
 
     if(!regexCell.test(inputCell) || inputCell == ""){
-        cellProduct.textContent = 'Telefone: (99) 99999-9999'
+        cellProduct.textContent = 'Telefone: Indefinido'
     } else {
         cellProduct.textContent = 'Telefone: ' + inputCell
     }
 
     if(textareaDescription == ""){
-        descriptionProduct.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusantium excepturi!'
+        descriptionProduct.textContent = 'Sem descrição'
     } else {
         descriptionProduct.textContent = textareaDescription
         descriptionProduct.style.display = 'none'
