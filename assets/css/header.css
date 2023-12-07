@@ -17,11 +17,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    cursor: pointer;
+    
+
 }
 
-.icon:hover{
+i:hover{
     color: var(--Bright-orange);
+    cursor: pointer;
 }
 
 .right-content,
@@ -32,26 +34,62 @@
 }
 
 .pop-up {
+    color: white;
     display: none;
     position: relative;
     top: 90px;
     position: fixed;
     border: 1px solid rgb(129, 129, 129);
     border-radius: 8px;
-    height: 200px;
-    width: 200px;
+    min-width: 200px;
+    max-width: auto;
     right: 20px;
-    background-color: var(--White);
+    background-color: var(--Dark-gray-blue);
 }
-
-
 
 .pop-up #close-button-settings,
 .pop-up #close-button-notifications {
-    font-size: 15px;
+    font-size: 1.5em;
+    color: white;
     position: absolute;
+    cursor: pointer;
     right: 10px;
     top: 10px;
+}
+
+.container-popup {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+}
+
+.container-popup .content {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-popup .content a {
+    text-decoration: none;
+    color: var(--Bright-orange);
+}
+
+.itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itens input {
+    width: 16px;
+    height: 16px;
+}
+
+.itens input:checked {
+    background-color: var(--Bright-orange);
 }
 
 #popup-notifications{
